@@ -1,0 +1,27 @@
+---
+title: "In-class Coding Exercises"
+date: "Module 9"
+output: tufte::tufte_handout
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+library(tufte)
+# invalidate cache when the tufte version changes
+knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tufte'))
+options(htmltools.dir.version = FALSE)
+```
+
+
+`r newthought('Perform text mining')`!  Within your group, identify one group member that has unstructured text information in their data set.  If nobody in your group does, then use the `IT_FPDSNG.csv` file that is in the `data` folder.^[This data set has a variable titled `descriptionofcontranctrequirement` that consists of free form text input by a contract specialist to provide more details regarding the contract.]  Work together to implement the text mining methods you've learned to assess and analyze the text field data. 
+
+Some questions you can investigate include:
+
+1. What unique words exist in your data set?
+2. Can you remove stop words so that you are only looking at words that provide context?
+3. What are the most common non-stop words in your data?
+4. What are the most common bi-grams?^[bi-grams are any combination of two consecutive words.]
+5. Does your most frequent single and bi-gram words show up consistently throughout your data or are they concentrated at different areas within your data?^[This will require you to start combining `dplyr` and `ggplot2` functionality to explore your text data after you've tidied it up.]  
+
+
+
